@@ -16,7 +16,7 @@
 		<div id="header">
 			<div id="video-holder">
 				<div class="video">
-					<iframe width="853" height="480" src="//www.youtube.com/embed/hnDGaY-UZ5s?rel=0&autoplay=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://player.vimeo.com/video/125820383?autoplay=0&color=ffffff&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
