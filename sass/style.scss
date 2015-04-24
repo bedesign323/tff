@@ -16,7 +16,7 @@ body{
   color: $color_main;
 
   @include bp(s){
-  	font: 14px/1.5 $font_reg;
+  	font: 18px/1.5 $font_reg;
   }
 }
 
@@ -47,6 +47,17 @@ a{
   -o-background-size: cover;
   background-size: cover;
   z-index: -1;
+
+  @include bp(s){
+  	width: 100%;
+  		height: 100vh;
+  		z-index: -1;
+  		background: #000 url(../images/TFF-cover-image.jpg) no-repeat center center; 
+	  -webkit-background-size: contain;
+	  -moz-background-size: contain;
+	  -o-background-size: contain;
+	  background-size: contain;
+  }
 }
 
 #soon{
@@ -60,6 +71,15 @@ a{
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 10px;
+
+	@include bp(s){
+		bottom: 20px;
+		margin-bottom: 0;
+	}
+}
+
+#gif{
+	margin: 80px 0;
 }
 
 #intro{
@@ -77,6 +97,25 @@ a{
 		top: 50vh;
 		margin-top: -300px;
 	}
+
+	 @include bp(s){
+		position: relative;
+		display: table;
+		vertical-align: middle;
+		top: 0;
+
+		.inner{
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		img{
+			position: relative;
+			margin-top: 0;
+			top: auto;
+			max-width: 80%;
+		}
+	 }
 }
 
 
@@ -388,6 +427,7 @@ h2.title{
 	@include bp(s){
 		font-size: .8em;
 		letter-spacing: 1px;
+		padding: 20px;
   }
 
 }
